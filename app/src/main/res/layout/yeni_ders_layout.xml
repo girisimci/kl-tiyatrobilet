@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <AutoCompleteTextView
+        android:id="@+id/etYeniDersAd"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="@+id/spnYeniDersNot"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="-4dp" />
+
+    <Spinner
+        android:id="@+id/spnYeniDersNot"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:entries="@array/tumNotlar"
+        app:layout_constraintStart_toEndOf="@+id/spnYeniDersKredi"
+        app:layout_constraintTop_toBottomOf="@+id/etYeniDersAd"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/spnYeniDersKredi"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:entries="@array/krediler"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etYeniDersAd"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnDersSil"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/remove"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toEndOf="@+id/etYeniDersAd"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

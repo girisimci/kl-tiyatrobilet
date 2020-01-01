@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <translate android:fromYDelta="-100%p" android:toYDelta="0%p" android:duration="2000"></translate> /**translate kısmı ile konum belirliyoruz
+                                                                                                        duration geliş hızı demek,toY delta duracağı yer
+                                                                                                        From Y Delta geleceği yer demek**/
+
+
+</set>
